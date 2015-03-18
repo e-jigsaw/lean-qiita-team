@@ -5,15 +5,40 @@ lean your qiita team
 
 # Usage
 
-# Installation
+Available on [Chrome Web Store](https://chrome.google.com/webstore/detail/lean-qiita-team/cmmapiojknfnhfjcmjlbbklkookmgbhm)!
+
+![](https://cloud.githubusercontent.com/assets/557961/6705113/c1268b08-cd94-11e4-84ec-f59fa9380f41.png)
+
+![](https://cloud.githubusercontent.com/assets/557961/6705117/c45478f8-cd94-11e4-8c47-e12a3960d0ba.png)
+
+See more on [Qiita](http://qiita.com/jgs/items/4ffd6fbf671cfd18d19b)!
 
 # Requirements
 
+* Node.js or io.js
+
 # Build
+
+```
+% npm start
+```
+
+## For release
+
+```
+% npm run ship
+```
 
 # Author
 
 * jigsaw (http://jgs.me, [@e-jigsaw](http://github.com/e-jigsaw))
+
+# Change log
+
+* v0.0.2
+  * Expand editor page
+* v0.0.1
+  * Initial release
 
 # License
 
