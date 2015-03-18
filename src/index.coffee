@@ -47,4 +47,5 @@ class QiitaPatchItem extends QiitaPatch
 
 switch
   when location.pathname is '/' then new QiitaPatch()
+  when location.pathname.split('/')[1] is 'drafts' then new QiitaPatch()
   when location.pathname.split('/')[2] is 'items' then new QiitaPatchItem()
