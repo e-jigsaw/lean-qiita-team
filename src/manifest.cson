@@ -1,7 +1,7 @@
 manifest_version: 2
 name: 'lean-qiita-team'
 description: 'lean your qiita team'
-version: '0.0.1'
+version: '0.0.2'
 content_scripts: [
   {
     matches: [
