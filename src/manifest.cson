@@ -1,0 +1,4 @@
+manifest_version: 2
+name: 'lean-qiita-team'
+description: 'lean your qiita team'
+version: '0.0.1'
