@@ -45,7 +45,24 @@ class QiitaPatchItem extends QiitaPatch
       @main.removeAttribute 'style'
       @icon.setAttribute 'class', 'fa fa-chevron-right'
 
+class QiitaPatchDraft extends QiitaPatch
+  constructor: ->
+    super()
+    @hideSubHeader()
+    @fixHeight()
+
+  hideSubHeader: ->
+    document.getElementsByClassName('teamSubHeader')[0].setAttribute 'style', 'display: none;'
+
+  fixHeight: ->
+    getPositionTop = (elm, n=0)-> if elm.offsetParent? then getPositionTop elm.offsetParent, n + elm.offsetTop else n
+    form = document.getElementsByClassName('teamItemForm')[0]
+    body = document.getElementById 'draft_item_raw_body'
+    bodyTop = getPositionTop body
+    miscHeight = (form.clientHeight - 128) - body.clientHeight
+    body.setAttribute 'style', "height: #{window.innerHeight - bodyTop - miscHeight}px;"
+
 switch
   when location.pathname is '/' then new QiitaPatch()
-  when location.pathname.split('/')[1] is 'drafts' then new QiitaPatch()
+  when location.pathname.split('/')[1] is 'drafts' then new QiitaPatchDraft()
   when location.pathname.split('/')[2] is 'items' then new QiitaPatchItem()
