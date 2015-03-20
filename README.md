@@ -34,7 +34,8 @@ See more on [Qiita](http://qiita.com/jgs/items/4ffd6fbf671cfd18d19b)!
 * jigsaw (http://jgs.me, [@e-jigsaw](http://github.com/e-jigsaw))
 
 # Change log
-
+* v0.0.3
+  * Expand editor height
 * v0.0.2
   * Expand editor page
 * v0.0.1
