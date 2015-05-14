@@ -1,0 +1,9 @@
+manifest_version: 2
+name: \lean-qiita-team
+description: 'lean your qiita team'
+version: \0.0.3
+content_scripts: [
+  * matches: [\https://*.qiita.com/*]
+    run_at: \document_end
+    js: [\index.js]
+]
